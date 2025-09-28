@@ -1,0 +1,11 @@
+State_name,"ROUND(AVG(Mean),1)","ROUND(AVG(Median),1)"
+"District of Columbia",90668.4,93759.6
+Connecticut,89732.8,121240.4
+"New Jersey",89565.4,126972.7
+Maryland,88444.2,114969.2
+Massachusetts,85645.7,119074.4
+Hawaii,82650.9,101567.3
+Virginia,80426.3,105313.4
+Alaska,79178.4,111026.5
+California,78654.3,101260.9
+"New York",77859.3,102731.8

@@ -1,0 +1,11 @@
+State_name,"ROUND(AVG(Mean),1)","ROUND(AVG(Median),1)"
+"New Jersey",89565.4,126972.7
+Connecticut,89732.8,121240.4
+Massachusetts,85645.7,119074.4
+Wyoming,70367.4,118339.1
+Maryland,88444.2,114969.2
+Alaska,79178.4,111026.5
+Utah,72971,110649.9
+"Rhode Island",72971.2,105752
+Virginia,80426.3,105313.4
+"New York",77859.3,102731.8
