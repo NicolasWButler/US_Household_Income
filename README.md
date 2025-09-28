@@ -1,51 +1,113 @@
-# US Household Income Project  
+# US Household Income Project (2023)
 
-## 📊 Project Overview  
-This project analyzes U.S. household income data through two key stages: **data cleaning** and **exploratory data analysis (EDA)**.  
-The goal was to ensure the dataset was consistent, accurate, and standardized before performing meaningful insights and comparisons across states, counties, and community types.  
+📊 **Project Overview**  
+This project explores U.S. household income data (2023) using MySQL.  
+It includes **data cleaning** steps to prepare the dataset and 
+**exploratory analysis** to answer key economic questions about states, 
+cities, land/water distribution, and community income levels.  
 
-The work was completed using **MySQL**.  
-
----
-
-## 🔧 Tasks Completed  
-
-### 🧹 Data Cleaning (`Us_Household_Data_Cleaning.sql`)  
-- Removed duplicate records using both aggregate queries and window functions  
-- Standardized inconsistent values in `state_name`, `place`, and `type` columns  
-- Populated missing entries in the `place` column using contextual information  
-- Corrected typographical errors (e.g., “georia” → “Georgia”)  
-- Checked for missing/null values in `ALand` and `AWater` fields  
-
-### 📈 Exploratory Analysis (`US_Household_Income_Exploratory_Data_Analysis.sql`)  
-- Identified the **top 10 largest states by land and water area**  
-- Calculated the **top 10 states by mean and median household income**  
-- Compared **household income across different community types** (e.g., cities vs. boroughs)  
-- Ranked **top cities** in the U.S. by both mean and median household income  
-- Explored state-level patterns by joining income and income statistics datasets  
+The project demonstrates SQL skills in:
+- Data cleaning and preprocessing  
+- Query design for descriptive statistics  
+- Exporting and interpreting results  
+- Linking insights to socio-economic context  
 
 ---
 
-## 🚀 Key Insights  
-- Significant variation exists across states, with some states consistently ranking at the top by both mean and median income  
-- Land/water distribution highlighted geographic outliers (e.g., states with very large water areas)  
-- Community type analysis showed that income levels differ across urban vs. rural communities  
-- Top cities by mean and median income reveal geographic inequality within states  
+## 🔧 Project Structure
+- `Us_Household_Data_Cleaning.sql` → Cleaning script (removing 
+duplicates, handling nulls, formatting).  
+- `US_Household_Income_Exploratory_Data_Analysis.sql` → Queries for 
+answering key questions.  
+- `cleaned_household_income_table.csv` → Final cleaned dataset (2023).  
+- `results/` (CSV exports) → Query outputs, browsable directly on GitHub:
+  - `highest_avg_income_per_state.csv`
+  - `highest_median_income_per_state.csv`
+  - `top_cities_by_mean.csv`
+  - `top_cities_by_median.csv`
+  - `largest_states_by_land.csv`
+  - `largest_states_by_water.csv`
+  - `income_by_community_type.csv`
 
 ---
 
-## 📂 Repository Contents  
-- `Us_Household_Data_Cleaning.sql` → Queries for cleaning and standardizing the dataset  
-- `US_Household_Income_Exploratory_Data_Analysis.sql` → Queries for analyzing income patterns  
+## ❓ Key Questions & Findings
+
+### 1. Which states have the highest household incomes?
+- **Highest average income**: District of Columbia, Connecticut, New 
+Jersey.  
+- **Highest median income**: Massachusetts, New Jersey, Hawaii.  
+- Many of these are also **high cost-of-living areas** (Northeast 
+corridor, Hawaii, Alaska, Virginia).  
+- Interesting note: **Alaska** appears in the top list despite being 
+remote — a surprising insight.  
+
+📂 Files:  
+- [`highest_avg_income_per_state.csv`](./highest_avg_income_per_state.csv)  
+- 
+[`highest_median_income_per_state.csv`](./highest_median_income_per_state.csv)  
 
 ---
 
-## 🛠️ Tools Used  
-- **MySQL** (data cleaning, joins, exploratory queries)  
+### 2. Which cities have the highest household incomes?
+- **Top by average income**: Cities in CT, NJ, and NY suburbs dominate.  
+- **Top by median income**: Reinforces strong concentration of wealth in 
+the Northeast.  
+
+📂 Files:  
+- [`top_cities_by_mean.csv`](./top_cities_by_mean.csv)  
+- [`top_cities_by_median.csv`](./top_cities_by_median.csv)  
 
 ---
 
-## 📌 How to Use  
-1. Clone the repository or download the SQL files  
-2. Run the cleaning script first (`Us_Household_Data_Cleaning.sql`) on the database  
-3. Then execute the EDA script (`US_Household_Income_Exploratory_Data_Analysis.sql`) to generate insights  
+### 3. How does geography (land vs. water area) compare across states?
+- **Largest by land area**: Alaska (unsurpassed), Texas, California.  
+- **Largest by water area**: Alaska again far ahead, followed by Michigan 
+and Florida.  
+
+📂 Files:  
+- [`largest_states_by_land.csv`](./largest_states_by_land.csv)  
+- [`largest_states_by_water.csv`](./largest_states_by_water.csv)  
+
+---
+
+### 4. How does household income vary across community types?
+- Suburban areas generally show higher incomes compared to rural areas.  
+- Rural communities have lower median values but also lower variance.  
+
+📂 File:  
+- [`income_by_community_type.csv`](./income_by_community_type.csv)  
+
+---
+
+## 🚀 Key Insights
+- High-income states align strongly with **high cost-of-living regions** 
+(Northeast, Hawaii, Alaska).  
+- Cities with the highest incomes cluster around **finance, government, 
+and tech hubs**.  
+- Geographic size (land/water) shows little direct correlation to income 
+but highlights state diversity.  
+- Community type is a strong predictor: **suburban > urban > rural** 
+income levels.  
+
+---
+
+## 🛠️ Tools Used
+- **MySQL Workbench** (cleaning + queries)  
+- **CSV exports** (to share results)  
+- **GitHub** (version control & project portfolio)  
+
+---
+
+## 📌 How to Use
+1. Clone this repo or download files.  
+2. Explore `.sql` scripts to see the cleaning and analysis steps.  
+3. Open `.csv` files directly on GitHub (clickable) or in Excel/Google 
+Sheets.  
+
+---
+
+✍️ *This project was built as part of my data analysis portfolio to 
+demonstrate SQL cleaning, querying, and interpretation skills using 2023 
+U.S. household income data.*
+
